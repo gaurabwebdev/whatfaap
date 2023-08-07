@@ -50,21 +50,31 @@ body {
 .user-chats{
     max-height: calc(100vh - 128px);
     overflow-y: scroll;
-    padding-top: 5rem !important;
+    padding-top: 6rem !important;
 }
 
 .user-chats::-webkit-scrollbar {
     width: 0.5rem;
+    
 }
 
 .user-chats::-webkit-scrollbar-track {
-    background: gray;
+    background: #202c33;
     border-radius: 1rem;
 }
 
 .user-chats::-webkit-scrollbar-thumb {
     background-color: rgb(168, 166, 166);
     border-radius: 1rem;
-    border: 2px solid gray;
+    border: 2px solid #202c33;
+}
+
+.single-chat{
+    cursor: pointer;
+}
+
+.single-chat:hover
+ {
+    background: var(--second-bg);
 }
 /* Right-Side CSS */
