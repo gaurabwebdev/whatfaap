@@ -11,15 +11,60 @@
 }
 
 :root {
-    --first-bg : #101b21;
-    --second-bg : #202C33;
+    --first-bg : #111b21;
+    --second-bg : #202c33;
 }
 
+/* General CSS */
+
 body {
-    width: 100%;
+    max-width: 1320px;
     height: 100vh;
-    background-color: #c6c8c9;
+    margin: auto;
+    /* background-color: #c6c8c9; */
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #fdfdfd;
 }
+
+/* Combine CSS */
+.user-img-div img {
+    width: 3rem;
+    height: 3rem;
+}
+/* Left-Side CSS */
+.left-side {
+    
+}
+
+.chat-search-box {
+    color: #fdfdfd !important;
+}
+
+.chat-search-box .form-control {
+    height: 2rem;
+    border: none;
+    box-shadow: none;
+}
+
+.user-chats{
+    max-height: calc(100vh - 128px);
+    overflow-y: scroll;
+    padding-top: 5rem !important;
+}
+
+.user-chats::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.user-chats::-webkit-scrollbar-track {
+    background: gray;
+    border-radius: 1rem;
+}
+
+.user-chats::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 166, 166);
+    border-radius: 1rem;
+    border: 2px solid gray;
+}
+/* Right-Side CSS */

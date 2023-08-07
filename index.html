@@ -11,28 +11,269 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-secondary-subtle">
     
     <!-- Main Starts -->
         <main>
-            <section>
+            <section class="container-fluid">
                 <!-- Left Side Starts -->
-                    <div>
-                        <div class="left-side">
-                            <div class="user-div">
-                                <img src="assets/img/user-img/user-1.jpg" alt="user-1">
+                    <div class="row border">
+                        <div class="left-side col col-md-5">
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-dark-subtle">
+                                <div class="user-img-div">
+                                    <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-1.jpg" alt="user-1">
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-users"></i>
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                    <i class="fa-solid fa-message"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-users"></i>
-                                <i class="fa-solid fa-circle-notch"></i>
-                                <i class="fa-solid fa-message"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <div class="p-2 d-flex justify-content-evenly align-items-center bg-dark">
+                                <div class="chat-search-box w-100 me-2 d-flex justify-content-between align-items-center gap-1 my-1 mx-2 py-1 px-2 rounded bg-dark-subtle">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input class="form-control bg-dark-subtle" placeholder="Search or start new chat" type="text">
+                                    
+                                    
+                                </div>
+                                <svg viewBox="0 0 24 24" height="20" width="20" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px"
+                                    y="0px" enable-background="new 0 0 24 24" xml:space="preserve">
+                                    <path fill="currentColor" d="M10,18.1h4v-2h-4V18.1z M3,6.1v2h18v-2H3z M6,13.1h12v-2H6V13.1z"></path>
+                                </svg>
+                            </div>
+                            <div class="user-chats p-3 pt-5 bg-dark d-flex flex-column justify-content-center gap-3">
+                                <div class="single-chat d-flex gap-2 ">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-2.jpg" alt="user-2">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-chat d-flex gap-2">
+                                    <div class="user-img-div">
+
+                                        <img class="object-fit-cover rounded-circle" src="assets/img/user-img/user-3.jpg" alt="user-3">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 border-bottom border-opacity-10 pb-2">
+                                        <p class="d-flex flex-column justify-content-center m-0 ms-2">
+                                            <span>
+                                                Amber Divine
+                                            </span>
+                                            <span>
+                                                I'm busy now. Call you later.
+                                            </span>
+                                        </p>
+                                        <p>
+                                            Today
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="right-side">
-                            
-                        </div>
-                        <div>
+                        <div class="right-side col col-md-7 p-2">
                             
                         </div>
                     </div>
