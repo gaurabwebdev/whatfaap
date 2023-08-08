@@ -12,7 +12,7 @@
 
 :root {
     --first-bg : #111b21;
-    --second-bg : #202c33;
+    --second-bg : #202c33e5;
 }
 
 /* General CSS */
@@ -27,6 +27,11 @@ body {
     color: #fdfdfd;
 }
 
+/* Pre-Built CSS */
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
 /* Combine CSS */
 .user-img-div img {
     width: 3rem;
@@ -37,14 +42,21 @@ body {
     
 }
 
-.chat-search-box {
-    color: #fdfdfd !important;
+.left-side-top, .right-side-top, .right-side-end {
+    background: var(--second-bg) !important;
 }
 
-.chat-search-box .form-control {
+.chat-search-box {
+    color: #fdfdfd !important;
+    background: var(--second-bg) !important;
+}
+
+.chat-search-box > .form-control, .right-side-end > .form-control {
     height: 2rem;
     border: none;
     box-shadow: none;
+    background: var(--second-bg) !important;
+    color: #fdfdfd;
 }
 
 .user-chats{
@@ -69,9 +81,7 @@ body {
     border: 2px solid #202c33;
 }
 
-.single-chat{
-    cursor: pointer;
-}
+
 
 .single-chat:hover
  {
