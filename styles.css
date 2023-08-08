@@ -13,6 +13,7 @@
 :root {
     --first-bg : #111b21;
     --second-bg : #202c33e5;
+    --seen-message: #51B8E5;
 }
 
 /* General CSS */
@@ -32,11 +33,41 @@ body {
     cursor: pointer !important;
 }
 
+.seen-message {
+    color: var(--seen-message);
+}
+
 /* Combine CSS */
 .user-img-div img {
     width: 3rem;
     height: 3rem;
 }
+
+.chat-search-box>.form-control,
+.right-side-end>.form-control {
+    height: 2rem;
+    border: none;
+    box-shadow: none;
+    background: var(--second-bg) !important;
+    color: #fdfdfd;
+}
+
+.user-chats::-webkit-scrollbar, .right-side-middle::-webkit-scrollbar {
+    width: 0.5rem;
+
+}
+
+.user-chats::-webkit-scrollbar-track, .right-side-middle::-webkit-scrollbar-track {
+    background: #202c33;
+    border-radius: 1rem;
+}
+
+.user-chats::-webkit-scrollbar-thumb, .right-side-middle::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 166, 166);
+    border-radius: 1rem;
+    border: 2px solid #202c33;
+}
+
 /* Left-Side CSS */
 .left-side {
     
@@ -51,13 +82,7 @@ body {
     background: var(--second-bg) !important;
 }
 
-.chat-search-box > .form-control, .right-side-end > .form-control {
-    height: 2rem;
-    border: none;
-    box-shadow: none;
-    background: var(--second-bg) !important;
-    color: #fdfdfd;
-}
+
 
 .user-chats{
     max-height: calc(100vh - 128px);
@@ -65,21 +90,7 @@ body {
     padding-top: 6rem !important;
 }
 
-.user-chats::-webkit-scrollbar {
-    width: 0.5rem;
-    
-}
 
-.user-chats::-webkit-scrollbar-track {
-    background: #202c33;
-    border-radius: 1rem;
-}
-
-.user-chats::-webkit-scrollbar-thumb {
-    background-color: rgb(168, 166, 166);
-    border-radius: 1rem;
-    border: 2px solid #202c33;
-}
 
 
 
@@ -88,3 +99,11 @@ body {
     background: var(--second-bg);
 }
 /* Right-Side CSS */
+.right-side-middle{
+    background-image: linear-gradient(to top, rgba(32, 44, 51, 0.419), rgba(32, 44, 51, 0.547)), url("assets/img/wapp-bg.png");
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 128px);
+    overflow-y: scroll;
+    top: 4rem;
+}
