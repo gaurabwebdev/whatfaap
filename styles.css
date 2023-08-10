@@ -100,10 +100,52 @@ body {
 }
 /* Right-Side CSS */
 .right-side-middle{
-    background-image: linear-gradient(to top, rgba(32, 44, 51, 0.419), rgba(32, 44, 51, 0.547)), url("assets/img/wapp-bg.png");
+    background-image: linear-gradient(to top, rgba(32, 44, 51, 0.75), rgba(32, 44, 51, 0.6)), url("assets/img/wapp-bg.png");
     background-position: center;
     background-size: cover;
     min-height: calc(100vh - 128px);
     overflow-y: scroll;
     top: 4rem;
+}
+
+
+/* User Messages CSS */
+
+.left-chats-container .chat-message div {
+    width: 0 !important;
+    height: 0 !important;
+    border-right: 1.5rem solid #212529;
+    border-left: 1.5rem solid transparent;
+    border-top: 1.5rem solid #212529;
+    border-radius: 0.2rem;
+    left: -0.75rem;
+}
+
+.right-chats-container{
+    padding-top: 6rem !important;
+}
+
+.right-chats-container .chat-message div {
+    width: 0 !important;
+    height: 0 !important;
+    border-right: 1.5rem solid transparent;
+    border-left: 1.5rem solid #198754;
+    border-top: 1.5rem solid #198754;
+    border-radius: 0.2rem;
+    right: -0.75rem;
+}
+
+.group-message{
+    margin-top: -2.25rem;
+}
+
+/* 
+    ========= 
+            MEDIA QUERIES For All Devices
+                                        =========
+
+*/
+
+@media only screen and (max-width: 600px) {
+    
 }
